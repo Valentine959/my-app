@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+ 
+    <!-- linking font awesome for icons -->
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <style>
+        /* Whole html box designing */
+        html {
+            box-sizing: border-box;
+            padding-left: 20%;
+            padding-right: 20%;
+            background-image: url('background.jpg');
+        }
+ 
+        /* Body width fixing */
+        body {
+            max-width: 100%
+        }
+ 
+        /* Box sizing depending on parent */
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+            
+        }
+ 
+        /* Styling column */
+        .column {
+            float: left;
+            width:33%;
+            margin-bottom: 16px;
+            padding: 5px 10px;
+        }
+ 
+ 
+        /* Column width change depends on screen size */
+        @media screen and (max-width: 670px) {
+            .column {
+                width:100%;
+                text-align: none;
+                width: fit-content;
+            }
+        }
+ 
+        /* Card designing */
+        .card {
+            background-color: hwb(0 95% 3% / 0.938);
+            border: 1px solid white;
+            width: fit-content;
+        }
+ 
+        .container {
+            padding: 0 16px;
+        }
+ 
+        /* Icon styling */
+        .fa {
+            margin: 0px;
+            font-size: 68px;
+ 
+        }
+ 
+        .fa:hover {
+            transform: rotateY(180deg);
+            transition: transform 0.8s;
+        }
+ 
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+           
+        }
+ 
+        /* Button designing */
+        .button {
+            border: none;
+            padding: 8px;
+            color: white;
+            background-color: #9d448a;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+ 
+        /* Hover effect on button */
+        .button:hover {
+            background-color: rgb(233, 23, 180);
+        }
+        
+        /* Margining first member of team */
+        #gfg {
+            float: none;
+            margin: auto;
+        }
+    </style>
+</head>
+ 
+<body>
+    <center>
+        <h1 style="background-color: #9d448a;width: fit-content;color: white;">VERITECH SOFTWARE COMPANY LIMITED</h1>
+        
+         <p>Welcome to Veritech limited company,where a 
+            dedicated team of professionals <br>works together to bring innovation,
+            creativity and expertise to software industry.<br>get to know the individuals who make our company thrive.</p>
+            <hr>
+            <h2><b>Meet Our Team</b></h2>
+<p style="background-color: #ad3593;color: antiquewhite;text-align: center;width: fit-content;">Leadership/Management Team</p>
+
+        <!-- Leadership Team -->
+        <div class ="row">
+            <div class="column"
+                id="gfg">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                       style="font-size:50px;"></i>
+                    <div class="container">
+                        <h3>Joseph Nguyen</h3>
+                        <p>CEO & Founder<br> Email:founder1@gmail.co.ke
+                        </p>
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                       style="font-size:68px;"></i>
+                    <div class="container">
+                        <h3>Valentine Kris</h3>
+ 
+                        <p>VPDeveloper Head<br>Email:vp1develop@gmail.com</p>
+ 
+                        
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                       style="font-size:68px;">
+                      </i>
+                    <div class="container">
+                       
+                        <h3>Ali Ahmed</h3>
+                        <p>VP Finance<br>Email:vp2finance@gmail.com</p>
+                        
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                           style="font-size:68px;">
+                      </i>
+                    <div class="container">
+                       
+                        <h3>Angela John</h3>
+                        <p>VP sales &Marketing <br>Email:vp3sales@gmail.com</p>
+                        
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="background-color: #ad3593;color: white;width: fit-content;">Development Team</h3>
+             
+               <!-- Development team -->
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                       style="font-size:68px;"></i>
+                    <div class="container">
+                        <h3>Ada Moses</h3>
+ 
+                        <p>Team Lead,SE<br>Email:developerse1@gmail.com</p>
+ 
+                        
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                       style="font-size:68px;">
+                      </i>
+                    <div class="container">
+                       
+                        <h3>Hashim Ahmed</h3>
+                        <p>Software Engineer<br>Email:developerse2@gmail.com</p>
+                        
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <i class="fa fa-user-circle"
+                           style="font-size:68px;">
+                      </i>
+                    <div class="container">
+                       
+                        <h3>Gerald George</h3>
+                        <p>Software Engineer <br>Email:developerse3@gmail.com</p>
+                        
+ 
+                        <button class="button">
+                              Contact
+                          </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+             
+        <div class="column">
+            <div class="card">
+                <i class="fa fa-user-circle"
+                       style="font-size:68px;">
+                  </i>
+                <div class="container">
+                   
+                    <h3>Ivvanah DawnMarie</h3>
+                    <p>Software Engineer <br>Email:developerse4@gmail.com</p>
+                    
+
+                    <button class="button">
+                          Contact
+                      </button>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="column">
+        <div class="card">
+            <i class="fa fa-user-circle"
+                   style="font-size:68px;">
+              </i>
+            <div class="container">
+               
+                <h3>Victoria Said</h3>
+                <p>Software Engineer<br>Email:developerse5@gmail.com</p>
+                
+
+                <button class="button">
+                      Contact
+                  </button>
+            </div>
+        </div>
+    </div>
+</div>  
+<div class="column">
+            <div class="card">
+                <i class="fa fa-user-circle"
+                       style="font-size:68px;">
+                  </i>
+                <div class="container">
+                   
+                    <h3>Bilden Bills</h3>
+                    <p>Software Engineer<br>Email:developerse6@gmail.com</p>
+                    
+
+                    <button class="button">
+                          Contact
+                      </button>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+  <hr>
+<h4 style="text-align: center;background-color: #ad3593;color: white;width: fit-content;">Sales And Marketing Team</h4>
+<!-- Sales & Marketing team -->
+<div class="column">
+    <div class="card">
+        <i class="fa fa-user-circle"
+               style="font-size:68px;">
+          </i>
+        <div class="container">
+           
+            <h3>Mathew Kim</h3>
+            <p>Manager Sales<br>Email:managersales@gmail.com</p>
+            
+
+            <button class="button">
+                  Contact
+              </button>
+              <br>
+        </div>
+    </div>
+</div>
+</div> 
+<div class="column">
+    <div class="card">
+        <i class="fa fa-user-circle"
+               style="font-size:68px;">
+          </i>
+        <div class="container">
+           
+            <h3>Parmar Jamal</h3>
+            <p>Sales Officer<br>Email:officersales1@gmail.com</p>
+            
+
+            <button class="button">
+                  Contact
+              </button>
+              <br>
+        </div>
+    </div>
+</div>
+</div>
+<div class="column">
+    <div class="card">
+        <i class="fa fa-user-circle"
+               style="font-size:68px;">
+          </i>
+        <div class="container">
+           
+            <h3>Imelda Bonareri</h3>
+            <p>Sales Officer <br>Email:officersales2@gmail.com</p>
+            
+
+            <button class="button">
+                  Contact
+              </button>
+              <br>
+        </div>
+    </div>
+</div>
+</div>  
+<div class="column">
+    <div class="card">
+        <i class="fa fa-user-circle"
+               style="font-size:68px;">
+          </i>
+        <div class="container">
+           
+            <h3>Peter Michael</h3>
+            <p>Marketing Officer<br>Email:marketing1@gmail.com</p>
+            
+
+            <button class="button">
+                  Contact
+              </button>
+              <br>
+        </div>
+    </div>
+</div>
+</div>  
+<div class="column">
+    <div class="card">
+        <i class="fa fa-user-circle"
+               style="font-size:68px;">
+          </i>
+        <div class="container">
+           
+            <h3>Rihana Gomez</h3>
+            <p>Marketing Person<br>Email:marketing2@gmail.com</p>
+            
+
+            <button class="button">
+                  Contact
+              </button>
+              <br>
+        </div>
+    </div>
+</div>
+</div>  
+</center>
+  
+   
+</body>
+
+</html>
